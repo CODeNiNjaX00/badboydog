@@ -58,20 +58,16 @@ export default function Home() {
       {/* Hero Section */}
       <main className="container mx-auto px-4 py-16">
         <div className="flex flex-col items-center text-center space-y-8">
-          {/* Updated logo section with animation */}
-          <div className="relative w-96 h-96 mb-8 animate-logo">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
-            <div className="relative w-full h-full">
-              <div className="absolute inset-0 rounded-full animate-border-glow"></div>
-              <Image
-                src="/badboylogo.jpeg"
-                alt="Bad Boy DOG"
-                width={800}
-                height={800}
-                className="rounded-full border-8 border-yellow-400 shadow-[0_0_50px_rgba(234,179,8,0.5)] object-cover w-full h-full relative z-10 group-hover:scale-105 transition-transform duration-500"
-                priority
-              />
-            </div>
+          {/* Updated logo section with larger circular shape */}
+          <div className="relative w-96 h-96 mb-8">
+            <Image
+              src="/badboylogo.jpeg"
+              alt="Bad Boy DOG"
+              width={800}
+              height={800}
+              className="rounded-full border-8 border-yellow-400 shadow-[0_0_50px_rgba(234,179,8,0.5)] object-cover w-full h-full"
+              priority
+            />
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
@@ -81,10 +77,6 @@ export default function Home() {
           <p className="text-2xl md:text-3xl font-bold text-yellow-400">
             🚀 The Goodest Bad Boy in Crypto! 🐕
           </p>
-          
-          <p className="text-2xl md:text-3xl font-bold text-yellow-400 animate-glow-pulse bg-white/5 backdrop-blur-sm rounded-lg px-4 py-2">
-            🎥 Launching LIVE on Pumpfun Platform! 📺
-          </p>
 
           {/* Add Countdown Timer */}
           <CountdownTimer />
@@ -93,7 +85,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 transform hover:scale-105 transition-transform">
               <h3 className="text-yellow-400 text-xl">Total Supply</h3>
-              <p className="text-2xl font-bold">1,000,000,000</p>
+              <p className="text-2xl font-bold">1,000,000,000,000</p>
             </div>
             <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 transform hover:scale-105 transition-transform">
               <h3 className="text-yellow-400 text-xl">Launch Platform</h3>
